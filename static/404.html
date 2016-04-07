@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Justaway</title>
+    <meta name="description" content="Lightweight Twitter Client for Android">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:image" content="https://justaway.info/img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="//fonts.googleapis.com/css?family=Offside:400" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+    <style>
+    h1 {
+      font-family: Offside;
+      font-size: 64px;
+      padding-top: 1em;
+    }
+    h1 + p {
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 0.5em;
+      padding-bottom: 3em;
+    }
+    img {
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 20px;
+    }
+    footer {
+      margin-top: 80px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px dashed gray;
+      font-size: 12px;
+      color: gray;
+      text-align: center;
+      font-family: Raleway;
+    }
+    .mark {
+      position: absolute;
+      width: 1em;
+      margin-left: -0.5em;
+      left: 50%;
+      top: 100px;
+      z-index: 1;
+      font-size: 32px;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+        padding-top: 0.5em;
+      }
+      h1 + p {
+        font-size: 12px;
+      }
+      footer {
+        font-size: 10px;
+      }
+      .mark {
+        top: 60px;
+      }
+    }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var img = $('img');
+      img.click(function(){
+        img.animate({top: '-1000px'});
+      })
+    });
+    </script>
+  </head>
+  <body>
+    <!-- <a href="#"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="img/fork-me-right-red@2x.png" alt="Fork me on GitHub"></a> -->
+    <div class="container">
+      <div class="text-center">
+        <h1 class="mark">?</h1>
+        <h1>404</h1>
+      </div>
+      <p class="text-center">
+        <img src="img/logo.svg" width="256" type="image/svg+xml">
+      </p>
+      <p class="text-center text-muted" style="font-family: Raleway;">Not Found</p>
+      <footer>
+  Portions of this page are modifications based on work created and <a href="http://code.google.com/policies.html">shared by Google</a> and used
+  according to terms described in the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+  3.0 Attribution License</a>.
+</footer>
+    </div>
+  </body>
+</html>

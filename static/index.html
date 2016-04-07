@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Justaway</title>
+    <meta name="description" content="Twitter Client">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://justaway.info/img/logo.png">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//fonts.googleapis.com/css?family=Offside:400" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+    <style>
+    h1 {
+      font-family: Offside;
+      font-size: 64px;
+      padding-top: 1em;
+    }
+    h1 + p {
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 0.5em;
+      padding-bottom: 3em;
+    }
+    img {
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 20px;
+    }
+    footer {
+      margin-top: 54px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px dashed gray;
+      font-size: 12px;
+      color: gray;
+      text-align: center;
+    }
+    .ios {
+      -webkit-font-smoothing: antialiased;
+      font-family: 'AvenirNext-Regular', Avenir, 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Droid Sans', Meiryo, 'sans-serif';
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+        padding-top: 0.5em;
+      }
+      h1 + p {
+        font-size: 12px;
+      }
+      footer {
+        font-size: 10px;
+      }
+    }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var img = $('img.logo');
+      img.click(function(e){
+        img.animate({top: '-1000px'}, function(){
+          setTimeout(function(){
+            location.href = 'https://play.google.com/store/apps/details?id=info.justaway';
+          }, 200);
+        });
+      })
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Justaway</h1>
+        <p class="text-muted" style="font-family: Raleway;">Twitter Client for Android and iOS</p>
+      </div>
+      <p class="text-center"><img class="logo" src="img/logo.svg" width="256" type="image/svg+xml"></p>
+      <p class="text-center text-muted" style="font-family: Raleway;"><a href="https://play.google.com/store/apps/details?id=info.justaway">Android (Google Play)</a></p>
+      <p class="text-center text-muted ios"><a href="https://itunes.apple.com/jp/app/justaway/id884527819">iOS (App Store)</a></p>
+      <footer>
+        <p class="developer">
+          Developer <a href="https://twitter.com/justawayfactory">@justawayfactory</a>
+        </p>
+        <p>
+          Icon
+          <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> /
+          <a href="http://www.entypo.com/">Entypo</a> /
+          <a href="http://typicons.com/">Typicons</a> /
+          <a href="http://thedesignoffice.org/project/modern-pictograms">Modern Pictograms</a> /
+          <a href="https://www.mapbox.com/maki/">Maki</a> /
+          <a href="http://zocial.smcllns.com/">Zocial</a> /
+          <a href="http://aristeides.com/">Elusiv</a> /
+          <a href="http://www.justbenice.ru/">Web Symbols</a>
+        </p>
+        <p>
+          Library
+          <a href="http://twitter4j.org/">Twitter4J</a> /
+          <a href="https://github.com/nostra13/Android-Universal-Image-Loader">Universal-Image-Loader</a> /
+          <a href="https://github.com/chrisbanes/ActionBar-PullToRefresh">ActionBar-PullToRefresh</a> /
+          <a href="https://github.com/matabii/scale-imageview-android">scale-imageview-android</a>
+        </p>
+        <p>
+          Portions of this page are modifications based on work created and <a href="http://code.google.com/policies.html">shared by Google</a> and used
+          according to terms described in the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+          3.0 Attribution License</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
