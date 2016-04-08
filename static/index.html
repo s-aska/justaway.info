@@ -98,13 +98,12 @@
       color: gray;
       text-align: center;
     }
-    footer a {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
     .ios {
       -webkit-font-smoothing: antialiased;
       font-family: 'AvenirNext-Regular', Avenir, 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Droid Sans', Meiryo, 'sans-serif';
+    }
+    .click {
+      transform: translateY(-1000px);
     }
     @media screen and (max-width: 768px) {
       h1 {
@@ -116,11 +115,16 @@
       }
       footer {
         font-size: 10px;
+        line-height: 2.6;
+      }
+      footer a {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      footer p {
+        margin-bottom: 0px;
       }
     }
-      .click {
-      transform: translateY(-1000px);
-      }
     </style>
     <script>
     window.addEventListener("DOMContentLoaded", function() {
