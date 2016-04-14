@@ -103,10 +103,10 @@
     </style>
     <script>
     window.addEventListener("DOMContentLoaded", function() {
-      var img = document.querySelector("img.logo");
+      var img = document.querySelector("img");
       if (img) {
         img.addEventListener("click", function() {
-          img.className = "logo click";
+          img.className = "click";
           setTimeout(function() {
             if (window.navigator.userAgent.toLowerCase().indexOf("android") != -1) {
               location.href = "https://play.google.com/store/apps/details?id=info.justaway";
