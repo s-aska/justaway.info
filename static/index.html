@@ -8,6 +8,7 @@
     <meta property="og:image" content="https://justaway.info/img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Offside|Raleway+Dots' type='text/css'>
     <style>
     body {
       margin: 0;
@@ -36,7 +37,7 @@
       text-align: center;
     }
     .text-thin {
-      font-family: 'Raleway Dots', cursive;
+      font-family: 'Raleway Dots';
     }
     .text-muted {
       color: #999;
@@ -104,12 +105,6 @@
     }
     </style>
     <script>
-    window.WebFontConfig = {
-      google: { families: [ 'Offside::latin', 'Raleway+Dots::latin' ] }
-    };
-    if (typeof WebFont === 'object') {
-      WebFont.load(WebFontConfig);
-    }
     window.addEventListener("DOMContentLoaded", function() {
       var img = document.querySelector("img.logo");
       if (img) {
@@ -126,7 +121,6 @@
       }
     }, false);
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
   </head>
   <body>
     <div class="container">
