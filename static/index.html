@@ -8,8 +8,6 @@
     <meta property="og:image" content="https://justaway.info/img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Offside&text=Justaway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway+Dots&text=Twitter+Client+for+Android+and+iOS' rel='stylesheet' type='text/css'>
     <style>
     body {
       margin: 0;
@@ -106,6 +104,12 @@
     }
     </style>
     <script>
+    window.WebFontConfig = {
+      google: { families: [ 'Offside::latin', 'Raleway+Dots::latin' ] }
+    };
+    if (typeof WebFont === 'object') {
+      WebFont.load(WebFontConfig);
+    }
     window.addEventListener("DOMContentLoaded", function() {
       var img = document.querySelector("img.logo");
       if (img) {
@@ -122,6 +126,7 @@
       }
     }, false);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
   </head>
   <body>
     <div class="container">
