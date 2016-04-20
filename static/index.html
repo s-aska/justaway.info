@@ -6,6 +6,8 @@
     <meta name="description" content="Twitter Client">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://justaway.info/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Offside|Raleway:100' rel='stylesheet' type='text/css'>
     <style>
     body {
       margin: 0;
@@ -99,17 +101,6 @@
     }
     </style>
     <script>
-    WebFontConfig = {
-      google: { families: [ 'Offside::latin', 'Raleway:100:latin' ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
     window.addEventListener("DOMContentLoaded", function() {
       var img = document.querySelector("img.logo");
       if (img) {
