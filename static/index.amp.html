@@ -1,16 +1,12 @@
 <!doctype html>
-<html>
+<html ⚡>
   <head>
     <meta charset="utf-8">
     <title>Justaway</title>
-    <meta name="description" content="Twitter Client">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://justaway.info/img/logo.png">
-    <link rel="amphtml" href="https://justaway.info/index.amp.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://justaway.info/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Offside|Raleway:100' rel='stylesheet' type='text/css'>
-    <style>
+    <style amp-custom>
     body {
       margin: 0;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -111,23 +107,7 @@
       }
     }
     </style>
-    <script>
-    window.addEventListener("DOMContentLoaded", function() {
-      var img = document.querySelector(".logo");
-      if (img) {
-        img.addEventListener("click", function() {
-          img.className = "logo click";
-          setTimeout(function() {
-            if (window.navigator.userAgent.toLowerCase().indexOf("android") != -1) {
-              location.href = "https://play.google.com/store/apps/details?id=info.justaway";
-            } else {
-              location.href = "https://itunes.apple.com/jp/app/justaway/id884527819";
-            }
-          }, 1000);
-        });
-      }
-    }, false);
-    </script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
     <div class="container">
