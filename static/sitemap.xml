@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://justaway.info/</loc>
+  </url>
+  <url>
+    <loc>https://justaway.info/iOS/privacy.html</loc>
+    <xhtml:link
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://justaway.info/iOS/privacy.html"
+                 />
+    <xhtml:link
+                 rel="alternate"
+                 hreflang="ja"
+                 href="https://justaway.info/iOS/privacy.ja.html"
+                 />
+  </url>
+  <url>
+    <loc>https://justaway.info/iOS/terms.html</loc>
+    <xhtml:link
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://justaway.info/iOS/terms.html"
+                 />
+    <xhtml:link
+                 rel="alternate"
+                 hreflang="ja"
+                 href="https://justaway.info/iOS/terms.ja.html"
+                 />
+  </url>
+</urlset>
