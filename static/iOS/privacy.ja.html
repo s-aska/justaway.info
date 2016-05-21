@@ -6,60 +6,133 @@
 		<meta name="description" content="プライバシーポリシー">
 		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 		<link rel="alternate" href="https://justaway.info/iOS/privacy.html" hreflang="en">
-		<style>
+		<style type="text/css">
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #f7f7f7;
+				margin: 0;
+				padding-bottom: 20px;
+				-webkit-font-smoothing: antialiased;
+				font-family: 'AvenirNext-Regular', Avenir, 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Droid Sans', Meiryo, 'sans-serif';
+				font-size: 14px;
+				line-height: 1.42857143;
+				color: #333;
+			}
+			.container {
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			@media (min-width: 768px) {
+				.container {
+					width: 750px;
+				}
+			}
+			@media (min-width: 992px) {
+				.container {
+					width: 970px;
+				}
+			}
+			@media (min-width: 1200px) {
+				.container {
+					width: 1170px;
+				}
+			}
+			h1 {
+				font-size: 36px;
+				margin: .67em 0;
+			}
+			h2 {
+				font-size: 24px;
+			}
+			h1, h2 {
+				margin: 40px 0 20px;
+				padding: 0 0 9px 0;
+				border-bottom: 1px solid #eee;
+				font-family: inherit;
+				font-weight: 500;
+				line-height: 1.1;
+				color: inherit;
+			}
+			ul, ol {
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+			.list-unstyled {
+				padding-left: 0;
+				list-style: none;
+			}
+			a {
+				color: #428bca;
+				text-decoration: none;
+				background: transparent;
+			}
+			a:active,
+			a:hover {
+				outline: 0;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>プライバシーポリシー</h1>
-		<p>最終更新日: 2016年5月21日</p>
-		<p>Justaway for iOSは個人で開発されているオープンソースのTwitterクライアントです。</p>
+		<div class="container">
+			<h1>Justaway for iOS プライバシーポリシー</h1>
+			<p>最終更新日: 2016年5月21日</p>
 
-		<h2>諸情報</h2>
-		<p><a href="https://github.com/s-aska/Justaway-for-iOS">ソースコード</a></p>
-		<p><a href="https://twitter.com/su_aska">開発者</a></p>
-		<p><a href="https://twitter.com/justawayfactory">サポート用Twitterアカウント</a></p>
-		<p>本文章に記載がない内容への質問は開発者又サポート用のTwitterアカウントで受け付けています。</p>
-		<p><a href="https://justaway.info/iOS/terms.ja.html">利用規約</a> も合わせて御覧ください。</p>
+			<h2>はじめに</h2>
+			<p>Justaway for iOSは個人で開発されているオープンソースのTwitterクライアントです。</p>
+			<ul>
+				<li><a href="https://github.com/s-aska/Justaway-for-iOS">ソースコード</a></li>
+				<li><a href="https://twitter.com/su_aska">開発者&nbsp;&nbsp;@su_aska</a></li>
+				<li><a href="https://twitter.com/justawayfactory">サポート用&nbsp;&nbsp;@justawayfactory</a></li>
+			</ul>
 
-		<h2>開発方針</h2>
-		<p>Justaway for iOSはプロダクトの分析改善に利用者の情報を利用せず、利用者からのフィードバック及びApple社からの提供情報によって改善を行っています。</p>
+			<p>本文章に記載がない内容への質問は開発者又はサポート用のTwitterアカウントで受け付けています。</p>
+			<p><a href="https://justaway.info/iOS/terms.ja.html">Justaway for iOS 利用規約</a> も合わせて御覧ください。</p>
 
-		<h2>ログ解析</h2>
-		<p>インストールや操作を検出するログ収集行為を行っていません。</p>
-		<p>FirebaseやFabric等のログ解析ツールを組み込んでいません。</p>
+			<h2>開発方針</h2>
+			<p>Justaway for iOSはプロダクトの分析改善にログを含むプライバシー情報を利用せず、利用者からのフィードバック及びApple社からの提供情報によって改善を行っています。</p>
 
-		<h2>広告</h2>
-		<p>Justaway for iOSに広告はありません。</p>
+			<h2>ログ解析</h2>
+			<p>インストールや操作を検出するログ収集行為を行っていません。</p>
+			<p>FirebaseやFabric等のログ解析ツールを組み込んでいません。</p>
 
-		<h2>クラッシュ情報</h2>
-		<p>クラッシュ情報とはアプリケーションが強制終了した時の情報で、画像の圧縮中に強制終了したなどの状況がわかります。</p>
-		<p>iOSアプリのクラッシュ情報はApple公式で提供されるものがあり、これだけを利用してます。</p>
-		<p>クラッシュ情報は iOSの [設定] &gt; [プライバシー] &gt; [診断/使用状況] の [Appデベロッパと共有] が ON の場合のみ開発者に提供されます。</p>
-		<p>Appleから提供されるクラッシュ情報には強制終了したプログラムの位置、OSバージョン、デバイス種類（iPhone 6なのかiPadなのか等）が含まれます。</p>
-		<p>Appleから提供されるクラッシュ情報には利用者のIPアドレスやTwitterアカウントなどプライバシー情報は含まれていません。</p>
-		<p>Appleから提供されるクラッシュ情報には開発者が任意の情報を付加することが出来ない為、ツイートしようとしていた内容や画像が提供されることはありません。</p>
-		<p>外部サービスや自前のツール等、Apple以外のクラッシュ情報収集を行っていません。</p>
+			<h2>広告</h2>
+			<p>Justaway for iOSに広告はありません。</p>
 
-		<h2>外部サイト</h2>
-		<p>ツイートに含まれるリンク、ユーザープロフィールに含まれるリンクから外部サイトを開いた場合、外部サイトに利用者の情報（IPアドレスやOSバージョン等）が送信されます。この際に送信される情報はSafariで外部サイトを開いた場合と同様であり、Justaway for iOSが利用者のTwitterアカウントなど情報を付与することはありません。</p>
+			<h2>クラッシュ情報</h2>
+			<p>クラッシュ情報とはアプリケーションが強制終了した時の情報で、画像の圧縮中に強制終了した等の状況がわかります。</p>
+			<p>iOSアプリのクラッシュ情報はAppleから提供されるものがありそれだけを利用してます。外部サービスや自前のツール等Apple以外のクラッシュ情報収集を行っていません。</p>
+			<p>Apple公式のクラッシュ情報は iOSの [設定] &gt; [プライバシー] &gt; [診断/使用状況] の [Appデベロッパと共有] が ON の場合のみ開発者に提供されます。</p>
+			<p>Appleから提供されるクラッシュ情報には強制終了したプログラムの位置、OSバージョン、デバイス種類（iPhone 6、iPad等）が含まれます、IPアドレスやTwitterアカウント等は含まれていません。</p>
+			<p>Appleから提供されるクラッシュ情報には開発者が任意の情報を付加することが出来ない為、ツイートしようとしていた内容や画像が提供されることはありません。</p>
 
-		<h2>シェア</h2>
-		<p>Google Play MusicからシェアメニューでJustawayを選択した場合、曲名・アーティスト名・アルバム画像取得のためにGoogle Play Musicに接続します。この際、Google Play Musicに利用者の情報（IPアドレスやOSバージョン等）が送信されます。</p>
-		<p>Justaway for iOS以外のアプリのSafari View ControllerからシェアメニューでJustawayを選択した場合、サイトのタイトルを取得するために開発者が用意したAmazon Lambdaに接続します。この際、Amazon Lambdaに利用者の情報（IPアドレスやOSバージョン等）が送信されます、保存はされません。</p>
+			<h2>外部サイト</h2>
+			<p>ツイートに含まれるリンク、ユーザープロフィールに含まれるリンクから外部サイトを開いた場合、外部サイトに利用者の情報（IPアドレスやOSバージョン等）が送信されます。この際に送信される情報はSafariで外部サイトを開いた場合と同様であり、Justaway for iOSが利用者のTwitterアカウント等情報を付与することはありません。</p>
 
-		<h2>利用規約・プライバシーポリシーの閲覧</h2>
-		<p>利用規約・プライバシーポリシーは開発者が管理するサーバー上に存在し、閲覧時に利用者の情報（IPアドレスやOSバージョン等）が送信されます。この際に送信される情報はSafariでサイトを開いた場合と同様であり、Justaway for iOSが利用者のTwitterアカウントなど情報を付与することはありません。</p>
+			<h2>シェア</h2>
+			<p>Google Play MusicからシェアメニューでJustawayを選択した場合、曲名・アーティスト名・アルバム画像取得のためにGoogle Play Musicに接続します。この際、Google Play Musicに利用者の情報（IPアドレスやOSバージョン等）が送信されます。</p>
+			<p>Justaway for iOS以外のアプリのSafari View ControllerからシェアメニューでJustawayを選択した場合、サイトのタイトルを取得するために開発者が用意したAmazon Lambdaに接続します。この際、Amazon Lambdaに利用者の情報（IPアドレスやOSバージョン等）が送信されます。</p>
 
-		<h2>Twitter API</h2>
-		<p>Justaway for iOSはタイムラインの取得や投稿にTwitter APIを利用しています、後述する「独自API」を除いて直接Twitter社のサーバーにアクセスする為、Twitter社以外に利用状況を収集される事はありません。</p>
+			<h2>利用規約・プライバシーポリシーの閲覧</h2>
+			<p>利用規約・プライバシーポリシーは開発者が管理するサーバー上に存在し、閲覧時に利用者の情報（IPアドレスやOSバージョン等）が送信されます。この際に送信される情報はSafariでサイトを開いた場合と同様であり、Justaway for iOSが利用者のTwitterアカウント等情報を付与することはありません。</p>
 
-		<h2>Justaway Ex</h2>
-		<p>ストリーミング（アプリの稲妻アイコン）有効時に通知タブに流れてくる情報はTwitter APIから取得することが出来ません、Justaway ExはJustaway for iOSの代わりに24時間365日ストリーミング接続を行い通知内容を開発者が管理するサーバー内に保存、Justaway for iOSから取得できるようにするシステムです。</p>
-		<p>Justaway Exもオープンソースプロジェクトとして公開されています。&nbsp;<a href="https://github.com/s-aska/Justaway-Ex">Justaway-Ex</a></p>
-		<p>通知タブ、いいねした人、プッシュ通知の機能はJustaway Exによって実現しています。</p>
-		<p>Justaway Exはインストールしただけでは有効になりません、アカウント設定の「通知（ベルアイコン）」を有効にし、Justaway ExのTwitter認証を行うと利用が開始されます。</p>
-		<p>Justaway Exが有効かどうかはアカウント設定の「通知（ベルアイコン）」が有効かどうかで判別できます。</p>
-		<p>Justaway Exを無効にするとJustaway Exからのストリーミング接続も切断されます、無効になっている間の通知内容を後から取得することは出来ません。</p>
-		<p>Justaway Exがサーバー内に保存するのはイベント種別・ID情報・日時のみで本文情報は含みません、本文情報はJustaway for iOSがID情報を利用しTwitter APIから取得します。</p>
+			<h2>Twitter API</h2>
+			<p>Justaway for iOSはタイムラインの取得や投稿にTwitter APIを利用しています、後述するJustaway Exを除いて直接Twitter社のサーバーにアクセスする為、Twitter社以外に利用状況を収集される事はありません。</p>
+
+			<h2>Justaway Ex</h2>
+			<p>ストリーミング（アプリの稲妻アイコン）有効時に通知タブに流れてくる情報はTwitter APIから取得することが出来ません、Justaway ExはJustaway for iOSの代わりに24時間365日ストリーミング接続を行い通知内容を開発者が管理するサーバー内に保存、Justaway for iOSから取得できるようにするシステムです。</p>
+			<p>Justaway Exもオープンソースプロジェクトとして公開されています。</p>
+			<p><a href="https://github.com/s-aska/Justaway-Ex">https://github.com/s-aska/Justaway-Ex</a></p>
+			<p>通知タブ、いいねした人、プッシュ通知の機能はJustaway Exによって実現しています。</p>
+			<p>Justaway Exはインストールしただけでは有効になりません、アカウント設定の「通知（ベルアイコン）」を有効にし、Justaway ExのTwitter認証を行うと利用が開始されます。</p>
+			<p>Justaway Exが有効かどうかはアカウント設定の「通知（ベルアイコン）」が有効かどうかで判別できます。</p>
+			<p>Justaway Exを無効にするとJustaway Exからのストリーミング接続も切断されます、無効になっている間の通知内容を後から取得することは出来ません。</p>
+			<p>Justaway Exがサーバー内に保存するのはイベント種別・ID情報・日時のみで本文情報は含みません、本文情報はJustaway for iOSがID情報を利用しTwitter APIから取得します。</p>
+		</div>
 	</body>
 </html>
