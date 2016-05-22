@@ -36,7 +36,6 @@ body {
 }
 h1 {
 	font-size: 36px;
-	margin: .67em 0;
 }
 @media (max-width: 767px) {
 	h1 {
