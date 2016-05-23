@@ -1,0 +1,29 @@
+{
+    "plugins": [
+        "html"
+    ],
+    "rules": {
+        "no-todo": true,
+        "sjsj": true,
+        "common-misspellings": true,
+        "spellchecker": true,
+        "spellcheck-tech-word": true,
+        "no-mix-dearu-desumasu": true,
+        "no-doubled-joshi": {
+            "min_interval" : 1,
+            "strict": false
+        },
+        "no-double-negative-ja": true,
+        "no-hankaku-kana": true,
+        "no-nfd": true,
+        "no-dropping-the-ra": true,
+        "no-doubled-conjunctive-particle-ga": true,
+        "no-doubled-conjunction": true,
+        "max-appearence-count-of-words": true,
+        "max-length-of-title": true,
+        "incremental-headers": true,
+        "general-novel-style-ja": {
+            max_arabic_numeral_digits: 4,
+        },
+    }
+}
