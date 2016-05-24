@@ -1,0 +1,40 @@
+{
+  "name": "justaway.info",
+  "version": "1.0.0",
+  "description": "justaway website",
+  "main": "index.js",
+  "scripts": {
+    "textlint": "textlint -f pretty-error static/iOS/*.ja.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-aska/justaway.info.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-aska/justaway.info/issues"
+  },
+  "homepage": "https://github.com/s-aska/justaway.info#readme",
+  "devDependencies": {
+    "textlint": "^6.8.0",
+    "textlint-plugin-html": "^0.1.4",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-general-novel-style-ja": "^1.3.0",
+    "textlint-rule-incremental-headers": "^0.2.0",
+    "textlint-rule-max-appearence-count-of-words": "^1.0.1",
+    "textlint-rule-max-length-of-title": "^1.0.1",
+    "textlint-rule-no-double-negative-ja": "^1.0.4",
+    "textlint-rule-no-doubled-conjunction": "^1.0.1",
+    "textlint-rule-no-doubled-conjunctive-particle-ga": "^1.0.2",
+    "textlint-rule-no-doubled-joshi": "^3.2.1",
+    "textlint-rule-no-dropping-the-ra": "^1.0.2",
+    "textlint-rule-no-hankaku-kana": "^1.0.1",
+    "textlint-rule-no-mix-dearu-desumasu": "^3.0.0",
+    "textlint-rule-no-nfd": "^1.0.1",
+    "textlint-rule-no-todo": "^2.0.0",
+    "textlint-rule-sjsj": "^1.0.5",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
+    "textlint-rule-spellchecker": "^0.1.4"
+  }
+}

@@ -4,7 +4,9 @@
     ],
     "rules": {
         "no-todo": true,
-        "sjsj": true,
+        "sjsj": {
+            "distance": 1
+        },
         "common-misspellings": true,
         "spellchecker": true,
         "spellcheck-tech-word": true,
