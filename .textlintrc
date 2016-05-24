@@ -8,7 +8,7 @@
             "distance": 1
         },
         "common-misspellings": true,
-        "spellchecker": true,
+        "spellchecker": false,
         "spellcheck-tech-word": true,
         "no-mix-dearu-desumasu": true,
         "no-doubled-joshi": {
