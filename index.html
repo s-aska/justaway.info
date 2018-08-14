@@ -7,126 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://justaway.info/img/logo.png">
     <link rel="amphtml" href="https://justaway.info/index.amp.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href='https://fonts.googleapis.com/css?family=Offside|Raleway:100' rel='stylesheet' type='text/css'>
     <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #333;
-      background-color: #fff;
-    }
-    a {
-      color: #428bca;
-      text-decoration: none;
-      background: transparent;
-    }
-    a:active,
-    a:hover {
-      outline: 0;
-    }
-    .container {
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    .text-center {
-      text-align: center;
-    }
-    .text-thin {
-      font-family: Raleway;
-    }
-    .text-muted {
-      color: #999;
-    }
-    h1 {
-      font-family: Offside;
-      font-size: 64px;
-      padding-top: 1em;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      font-weight: 500;
-      line-height: 1.1;
-    }
-    p {
-      margin: 0 0 10px;
-    }
-    h1 + p {
-      font-size: 16px;
-      font-weight: bold;
-      padding-top: 0.5em;
-      padding-bottom: 3em;
-    }
-    .logo {
-      text-align: center;
-      position: relative;
-      cursor: pointer;
-      padding-bottom: 20px;
-      transition-duration: 0.75s;
-    }
-    .logo svg {
-      width: 256px;
-      height: 256px;
-      display: inline-block;
-    }
-    footer {
-      margin-top: 30px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-top: 1px dashed gray;
-      font-size: 14px;
-      font-weight: 200;
-      color: gray;
-      text-align: center;
-    }
-    .store {
-      -webkit-font-smoothing: antialiased;
-      font-family: 'AvenirNext-Regular', Avenir, 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Droid Sans', Meiryo, 'sans-serif';
-    }
-    .click {
-      transform: translateY(-1000px);
-    }
-    @media screen and (max-width: 768px) {
+      body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+      a {
+        color: #428bca;
+        text-decoration: none;
+        background: transparent;
+      }
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-thin {
+        font-family: Raleway;
+      }
+      .text-muted {
+        color: #999;
+      }
       h1 {
-        font-size: 48px;
-        padding-top: 0.5em;
+        font-family: Offside;
+        font-size: 64px;
+        padding-top: 1em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+      p {
+        margin: 0 0 10px;
       }
       h1 + p {
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 0.5em;
+        padding-bottom: 3em;
+      }
+      .logo {
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 20px;
+        transition-duration: 0.75s;
+      }
+      .logo svg {
+        width: 256px;
+        height: 256px;
+        display: inline-block;
       }
       footer {
-        font-size: 10px;
-        line-height: 2.6;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px dashed gray;
+        font-size: 14px;
+        font-weight: 200;
+        color: gray;
+        text-align: center;
       }
-      footer a {
-        padding-left: 2px;
-        padding-right: 2px;
+      .store {
+        -webkit-font-smoothing: antialiased;
+        font-family: 'AvenirNext-Regular', Avenir, 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Droid Sans', Meiryo, 'sans-serif';
       }
-      footer p {
-        margin-bottom: 0px;
+      .click {
+        transform: translateY(-1000px);
       }
-    }
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 48px;
+          padding-top: 0.5em;
+        }
+        h1 + p {
+          font-size: 12px;
+        }
+        footer {
+          font-size: 10px;
+          line-height: 2.6;
+        }
+        footer a {
+          padding-left: 2px;
+          padding-right: 2px;
+        }
+        footer p {
+          margin-bottom: 0;
+        }
+      }
     </style>
     <script>
-    window.addEventListener("DOMContentLoaded", function() {
-      var img = document.querySelector(".logo");
-      if (img) {
-        img.addEventListener("click", function() {
-          img.className = "logo click";
-          setTimeout(function() {
-            if (window.navigator.userAgent.toLowerCase().indexOf("android") != -1) {
-              location.href = "https://play.google.com/store/apps/details?id=info.justaway";
-            } else {
-              location.href = "https://itunes.apple.com/jp/app/justaway/id884527819";
-            }
-          }, 1000);
-        });
-      }
-    }, false);
+      window.addEventListener("DOMContentLoaded", function () {
+        var img = document.querySelector(".logo");
+        if (img) {
+          img.addEventListener("click", function () {
+            img.className = "logo click";
+            setTimeout(function () {
+              img.className = "logo";
+            }, 1000);
+            setTimeout(function () {
+              document.querySelector(".store").innerText = "Thank You";
+            }, 1800);
+          });
+        }
+      }, false);
     </script>
   </head>
   <body>
@@ -137,7 +136,7 @@
       </div>
       <p class="text-center">
         <div class="logo">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
             <path fill="#D97155" stroke="#D97155" stroke-width="0.8596" d="M187.873,91.295v86.898c0,7.897-6.402,14.294-14.298,14.294H82.443
               c-7.893,0-14.291-6.396-14.291-14.294V91.295"/>
             <path fill="#E7C091" d="M36.179,158.236c0,7.398,5.997,13.389,13.391,13.389c7.395,0,13.392-5.991,13.392-13.389v-56.081
@@ -149,7 +148,9 @@
               c0-7.394,5.996-13.39,13.391-13.39c7.396,0,13.389,5.996,13.389,13.39L219.821,158.236L219.821,158.236z"/>
             <path fill="#D97155" d="M163.821,222.15c0,7.398-5.997,13.392-13.391,13.392c-7.395,0-13.39-5.993-13.39-13.392v-32.084
               c0-7.394,5.995-13.39,13.39-13.39c7.394,0,13.391,5.996,13.391,13.39V222.15z"/>
-            <path fill="#E7C091" d="M127.973,31.296c-33.311,0-60.315,24.771-60.315,55.325h120.636
+            <path
+              fill="#E7C091"
+              d="M127.973,31.296c-33.311,0-60.315,24.771-60.315,55.325h120.636
               C188.294,56.067,161.289,31.296,127.973,31.296z M100.545,64.78c-2.792,0-5.053-2.261-5.053-5.053c0-2.79,2.262-5.053,5.053-5.053
               c2.787,0,5.052,2.263,5.052,5.053C105.597,62.519,103.332,64.78,100.545,64.78z M155.459,64.78c-2.79,0-5.055-2.261-5.055-5.053
               c0-2.79,2.265-5.053,5.055-5.053c2.788,0,5.051,2.263,5.051,5.053C160.51,62.519,158.247,64.78,155.459,64.78z"/>
@@ -157,34 +158,47 @@
           </svg>
         </div>
       </p>
-      <p class="text-center text-muted store"><a href="https://play.google.com/store/apps/details?id=info.justaway">for Android</a></p>
-      <p class="text-center text-muted store"><a href="https://itunes.apple.com/jp/app/justaway/id884527819">for iOS</a></p>
+      <p class="text-center text-muted store">
+        The End
+      </p>
       <footer>
         <p class="developer">
-          Developer <a href="https://twitter.com/justawayfactory">@justawayfactory</a>
+          Developer
+          <a href="https://twitter.com/justawayfactory">@justawayfactory</a>
         </p>
         <p>
           Icon
-          <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> /
-          <a href="http://www.entypo.com/">Entypo</a> /
-          <a href="http://typicons.com/">Typicons</a> /
-          <a href="http://thedesignoffice.org/project/modern-pictograms">Modern Pictograms</a> /
-          <a href="https://www.mapbox.com/maki/">Maki</a> /
-          <a href="http://zocial.smcllns.com/">Zocial</a> /
-          <a href="http://aristeides.com/">Elusiv</a> /
+          <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
+          /
+          <a href="http://www.entypo.com/">Entypo</a>
+          /
+          <a href="http://typicons.com/">Typicons</a>
+          /
+          <a href="http://thedesignoffice.org/project/modern-pictograms">Modern Pictograms</a>
+          /
+          <a href="https://www.mapbox.com/maki/">Maki</a>
+          /
+          <a href="http://zocial.smcllns.com/">Zocial</a>
+          /
+          <a href="http://aristeides.com/">Elusiv</a>
+          /
           <a href="http://www.justbenice.ru/">Web Symbols</a>
         </p>
         <p>
           Library
-          <a href="http://twitter4j.org/">Twitter4J</a> /
-          <a href="https://github.com/nostra13/Android-Universal-Image-Loader">Universal-Image-Loader</a> /
-          <a href="https://github.com/chrisbanes/ActionBar-PullToRefresh">ActionBar-PullToRefresh</a> /
+          <a href="http://twitter4j.org/">Twitter4J</a>
+          /
+          <a href="https://github.com/nostra13/Android-Universal-Image-Loader">Universal-Image-Loader</a>
+          /
+          <a href="https://github.com/chrisbanes/ActionBar-PullToRefresh">ActionBar-PullToRefresh</a>
+          /
           <a href="https://github.com/matabii/scale-imageview-android">scale-imageview-android</a>
         </p>
         <p>
-          Portions of this page are modifications based on work created and <a href="https://developers.google.com/site-policies">shared by Google</a> and used
-          according to terms described in the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons
-          3.0 Attribution License</a>.
+          Portions of this page are modifications based on work created and
+          <a href="https://developers.google.com/site-policies">shared by Google</a>
+          and used according to terms described in the
+          <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0 Attribution License</a>.
         </p>
       </footer>
     </div>
